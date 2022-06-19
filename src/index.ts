@@ -1,4 +1,4 @@
-const timer = (usermin: number, usersec: number, callback: any) => {
+export const timer = (usermin: number, usersec: number, callback: any) => {
   if ('development' === process.env.NODE_ENV) {
     console.log('boop');
   }
@@ -45,5 +45,3 @@ const timer = (usermin: number, usersec: number, callback: any) => {
 
   
 };
-
-timer(1,20,(p) => console.log(p));
